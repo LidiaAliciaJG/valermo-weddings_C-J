@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class="hidden md:flex text-sm text-[#000000d9] items-center">
-                        <a href="/" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">HOME</a>
+                        <a href="" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">HOME</a>
                         <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
                         <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
                         <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
@@ -148,7 +148,8 @@
 
     <script>
         const imageCount = 19; // total number of images in your folder
-        const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/galleries/${i + 1}.jpg`);
+        /*const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/galleries/${i + 1}.jpg`);*/
+        const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/example-couple${i + 1}.jpg`);
 
         let currentImageIndex = 0;
         function getImage() {
@@ -156,7 +157,6 @@
             currentImageIndex = (currentImageIndex + 1) % imagePaths.length; // reinicia al llegar al final
             return image;
         }
-
 
         const scenes = [
             () => `
