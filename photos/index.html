@@ -57,6 +57,10 @@
             }
         }
 
+        .scene {
+            height: 100%;
+        }
+
         .scene img {
             object-fit: cover;
             width: 100%;
@@ -101,11 +105,11 @@
                         </div>
                     </div>
                     <div class="hidden md:flex text-sm text-[#000000d9] items-center">
-                        <a href="/" class="mitem px-6 py-6 bg-[#e4e4e4]">HOME</a>
+                        <a href="/" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">HOME</a>
                         <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
                         <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
                         <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
-                        <a href="photos" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">PHOTOS</a>
+                        <a href="photos" class="mitem px-6 py-6 bg-[#e4e4e4]">PHOTOS</a>
                         <a href="things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
                         <a href="faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
                         <a href="rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
@@ -128,16 +132,14 @@
                 </div>-->
     </div>
 
-    <div id="slideshow" class="w-full max-w-screen-xl mx-auto h-[90vh] overflow-hidden relative"></div>
-
-
+    <div id="slideshow" class="w-full h-[90vh] overflow-hidden relative"></div>
 
 
     <footer class="py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center text-center space-y-6">
                 <h5 class="text-sm font-semibold">Web Invitations</h5>
-                <img class="logo-footer max-w-[5rem]" src="../assets/images/mova_eventos.svg" alt="MOVA Eventos">
+                <img class="logo-footer max-w-[5rem]" src="assets/images/mova_eventos.svg" alt="MOVA Eventos">
                 <p class="text-sm">© 2025 un desarrollo para MOVÀ Eventos</p>
             </div>
         </div>
@@ -146,94 +148,133 @@
 
     <script>
         const imageCount = 19; // total number of images in your folder
-        const imagePaths = Array.from({ length: imageCount }, (_, i) => `../assets/images/galleries/${i + 1}.jpg`);
+        const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/galleries/${i + 1}.jpg`);
 
+        let currentImageIndex = 0;
         function getImage() {
-            imagePaths.forEach(element => {
-                return element
-            });
+            const image = imagePaths[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % imagePaths.length; // reinicia al llegar al final
+            return image;
         }
 
+
         const scenes = [
-            /*() => `
+            () => `
             <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-left"><img src="${getImage()}" alt="" class="w-full h-full" /></div>
-              <div class="animate-from-right"><img src="${getImage()}" alt="" class="w-full h-full" /></div>
+              <div class="animate-from-left"><img src="${getImage()}" alt="" class="w-full h-full object-cover " /></div>
+              <div class="animate-from-right"><img src="${getImage()}" alt="" class="w-full h-full object-cover " /></div>
             </div>
           `,
             () => `
             <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
               <div class="col-span-1 grid grid-cols-2 grid-rows-2 gap-2">
-                <div class="animate-from-left col-span-2 row-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left col-span-2 row-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
               </div>
             </div>
           `,
             () => `
             <div class="scene w-full h-full grid grid-cols-2 gap-2">
-                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                <div class="col-span-1 grid grid-rows-2 gap-2">
-                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="grid grid-rows-2 gap-2">
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                        </div>
-                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                    </div>
-                </div>
-            </div>
-          `,
-          () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-                <div class="col-span-1 grid grid-rows-2 gap-2">
-                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="grid grid-rows-2 gap-2">
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                        </div>
-                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                    </div>
-                </div>
-                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="col-span-1 grid grid-cols-2 grid-rows-2 gap-2">
+                <div class="animate-from-left col-span-2 row-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              </div>
+              <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
             </div>
           `,
             () => `
             <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="col-span-1 grid grid-rows-2 gap-2">
+                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="grid grid-rows-2 gap-2">
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                        </div>
+                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                    </div>
+                </div>
             </div>
-          `,*/
+          `,
             () => `
             <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="col-span-1 grid grid-rows-2 gap-2">
+                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="grid grid-rows-2 gap-2">
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                        </div>
+                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                    </div>
+                </div>
+                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
               <div class="grid grid-rows-2 gap-2">
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
               </div>
             </div>
-          `,/*
+          `,
             () => `
             <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-              <div class="grid grid-rows-3 gap-2">
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="grid grid-rows-2 gap-2">
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
               </div>
+              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-3 gap-2">
+              <div class="animate-from-top col-span-2"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="grid grid-rows-3 gap-2">
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              </div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-3 gap-2">
+              <div class="animate-from-top col-span-2"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="grid grid-rows-2 gap-2">
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              </div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-3 gap-2">
+                <div class="grid grid-rows-2 gap-2">
+                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+                </div>
+              <div class="animate-from-top col-span-2"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
             </div>
           `,
             () => `
             <div class="scene w-full h-full grid grid-cols-2 grid-rows-2 gap-2">
-              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-              <div class="animate-from-top"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-              <div class="animate-from-bottom"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="animate-from-top"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="animate-from-bottom"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
             </div>
-          `*/
+          `
         ];
 
         let current = 0;

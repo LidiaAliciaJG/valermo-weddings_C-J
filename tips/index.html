@@ -54,9 +54,9 @@
                         </div>
                     </div>
                     <div class="hidden md:flex text-sm text-[#000000d9] items-center">
-                        <a href="/" class="mitem px-6 py-6 bg-[#e4e4e4]">HOME</a>
+                        <a href="/" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">HOME</a>
                         <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
-                        <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
+                        <a href="tips" class="mitem px-6 py-6  bg-[#e4e4e4]">TRAVEL + HOTEL</a>
                         <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
                         <a href="photos" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">PHOTOS</a>
                         <a href="things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
@@ -82,18 +82,19 @@
                 </div>-->
     </div>
 
-    <div class="page-header h-[400px] bg-cover bg-center" style="background-image: url('../assets/images/04-Tips.jpg')">
+    <div class="page-header h-[400px] bg-cover bg-center" style="background-image: url('assets/images/04-Tips.jpg')">
     </div>
     <div class="container mx-auto p-[12px]">
-        <div class="container mx-auto px-4 py-10 text-center">
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between md:gap-8 relative">
+        <section class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
 
-                <!-- Columna 1 -->
-                <div class="w-full lg:w-1/2 space-y-4">
-                    <h2 class="text-2xl font-semibold">Gran Hotel Ciudad de México</h2>
-                    <div class="text-lg">
-                        <img src="" alt="Gran Hotel Ciudad de México">
-                        <div>
+                <!-- 1 -->
+                <div class="w-full max-w-md space-y-4 text-center pb-8">
+                    <div class="text-lg space-y-4">
+                        <h2 class="text-2xl font-semibold">Gran Hotel Ciudad de México</h2>
+                        <img src="assets\images\places\Gran-Hotel-Ciudad-de-México.png"
+                            alt="Gran Hotel Ciudad de México" class="w-full aspect-video object-cover">
+                        <div class="space-y-4 text-base">
                             <p>
                                 This iconic 5-star hotel, located right on the Zócalo at Dowtown Mexico City, boasts a
                                 stunning lobby with a Tiffany stained-glass ceiling. It offers elegant rooms and suites,
@@ -108,13 +109,13 @@
                     </a>
                 </div>
 
-
-                <!-- Columna 2 -->
-                <div class="w-full lg:w-1/2 space-y-4">
-                    <h2 class="text-2xl font-semibold">Umbral Hotel</h2>
-                    <div class="text-lg">
-                        <img src="" alt="Umbral Hotel">
-                        <div>
+                <!-- 2 -->
+                <div class="w-full max-w-md space-y-4 text-center pb-8">
+                    <div class="text-lg space-y-4">
+                        <h2 class="text-2xl font-semibold">Umbral Hotel</h2>
+                        <img src="assets\images\places\Umbral Hotel.png" alt="Umbral Hotel"
+                            class="w-full aspect-video object-cover">
+                        <div class="space-y-4 text-base">
                             <p>
                                 Is a highly-regarded hotel in downtown Mexico City, particularly for travelers who
                                 appreciate a stylish, art-focused boutique experience with a prime location for
@@ -132,12 +133,13 @@
                     </a>
                 </div>
 
-                <!-- Columna 3 -->
-                <div class="w-full lg:w-1/2 space-y-4">
-                    <h2 class="text-2xl font-semibold">Hilton Reforma México City</h2>
-                    <div class="text-lg">
-                        <img src="" alt="Hilton Reforma México City">
-                        <div>
+                <!-- 3 -->
+                <div class="w-full max-w-md space-y-4 text-center pb-8">
+                    <div class="text-lg space-y-4">
+                        <h2 class="text-2xl font-semibold">Hilton Reforma México City</h2>
+                        <img src="assets\images\places\Hilton-Reforma-México-City.png" alt="Hilton Reforma México City"
+                            class="w-full aspect-video object-cover">
+                        <div class="space-y-4 text-base">
                             <p>
                                 This iconic 5-star hotel, located right on the Zócalo (main square), boasts a stunning
                                 lobby
@@ -155,19 +157,17 @@
                     </a>
                 </div>
             </div>
-
             <!-- Línea blanca horizontal -->
             <div class="mt-10 text-center">
-                <img src="../assets/images/visuals/hr.svg" class="mx-auto max-w-md" alt="divider" />
+                <img src="assets/images/visuals/hr.svg" class="mx-auto max-w-md" alt="divider" />
             </div>
-        </div>
-
+        </section>
 
         <div class="container mx-auto px-4 py-10 text-center">
             <div class="max-w-4x1 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
 
                 <!-- Columna 4 -->
-                <div class="w-full lg:w-1/2 space-y-4">
+                <div class="w-full lg:w-1/2 space-y-4 pb-8">
                     <h2 class="text-2xl font-semibold">Mexico City International Airport</h2>
                     <div class="text-lg">
                         <div>
@@ -184,7 +184,7 @@
                 <div class="hidden lg:block h-40 w-[2px] bg-white"></div>
 
                 <!-- Columna 5 -->
-                <div class="w-full lg:w-1/2 space-y-4">
+                <div class="w-full lg:w-1/2 space-y-4 pb-8">
                     <h2 class="text-2xl font-semibold">Travel Note</h2>
                     <div class="text-lg">
                         <div>
@@ -205,13 +205,13 @@
 
             <!-- Línea blanca horizontal -->
             <div class="mt-10 text-center">
-                <img src="../assets/images/visuals/hr.svg" class="mx-auto max-w-md" alt="divider" />
+                <img src="assets/images/visuals/hr.svg" class="mx-auto max-w-md" alt="divider" />
             </div>
         </div>
 
         <div class="container mx-auto px-4 py-10 flex justify-center">
             <!-- Columna 6 -->
-            <div class="w-full max-w-xl space-y-4 text-center">
+            <div class="w-full max-w-xl space-y-4 text-center pb-8">
                 <h2 class="text-2xl font-semibold">Traffic</h2>
                 <p class="text-lg">Mexico City's traffic is one of the worst in the world, especially during rush hour
                     with
@@ -226,7 +226,7 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center text-center space-y-6">
                 <h5 class="text-sm font-semibold">Web Invitations</h5>
-                <img class="logo-footer max-w-[5rem]" src="../assets/images/mova_eventos.svg" alt="MOVA Eventos">
+                <img class="logo-footer max-w-[5rem]" src="assets/images/mova_eventos.svg" alt="MOVA Eventos">
                 <p class="text-sm">© 2025 un desarrollo para MOVÀ Eventos</p>
             </div>
         </div>
