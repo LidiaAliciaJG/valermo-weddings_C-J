@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="canonical" href="/rsvp">
-        <title>Claire & Jonny</title>
-        <script src="src/js/router.js"></script>
-        <link rel="stylesheet" href="../src/css/output.css">
-        
-    </head>
-    <body class="font-playfair antialiased bg-black text-white">
-        <div class="header">
-            <div class="container mx-auto p-9">
-                <div class="container mx-auto">
-                    <div class="hidden sm:flex flex-wrap items-center justify-center text-center">
-                        <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:mr-2">
-                            Saturday, January 31th 2026
-                        </div>
-                        <div class="basis-full sm:basis-1/2">
-                            <h1 class="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
-                                Claire & Jonny
-                            </h1>
-                        </div>
-                        <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:ml-2">
-                            Mexico City
-                        </div>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const base = document.createElement('base');
+        if (location.hostname.includes('github.io')) {
+            base.href = '/valermo-weddings_C-J/';
+        } else {
+            base.href = '/';
+        }
+        document.head.appendChild(base);
+    </script>
+    <link rel="canonical" href="/rsvp">
+    <title>Claire & Jonny</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+
+</head>
+
+<body class="font-playfair antialiased bg-black text-white">
+    <div class="header">
+        <div class="container mx-auto p-9">
+            <div class="container mx-auto">
+                <div class="hidden sm:flex flex-wrap items-center justify-center text-center">
+                    <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:mr-2">
+                        Saturday, January 31th 2026
                     </div>
+                    <div class="basis-full sm:basis-1/2">
+                        <h1 class="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
+                            Claire & Jonny
+                        </h1>
+                    </div>
+                    <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:ml-2">
+                        Mexico City
+                    </div>
+
                 </div>
             </div>
-            <div class="nav-bar bg-white text-black">
-                <div class="container mx-auto">
-                    <nav class="flex justify-center">
-                        <!--<div class="flex">
+        </div>
+        <div class="nav-bar bg-white text-black">
+            <div class="container mx-auto">
+                <nav class="flex justify-center">
+                    <!--<div class="flex">
                       <img class="logo" src="/assets/images/mj_short.png" alt="Mis XV años">
                     </div>-->
-                        <div class="flex lg:hidden">
-                            <div class="flex items-center m-burger">
-                                <button class="flex items-center hamburger hamburger--collapse mobileMenu" type="button">
-                                    <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                    </span>
-                                </button>
-                            </div>
+                    <div class="flex lg:hidden">
+                        <div class="flex items-center m-burger">
+                            <button class="flex items-center hamburger hamburger--collapse mobileMenu" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
                         </div>
-                        <div class="hidden md:flex text-sm text-[#000000d9] items-center">
-                            <a href="/" class="mitem px-6 py-6 bg-[#e4e4e4]">HOME</a>
-                            <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
-                            <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
-                            <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
-                            <a href="photos" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">PHOTOS</a>
-                            <a href="things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
-                            <a href="faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
-                            <a href="rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
-                        </div>
-                          
-                    </nav>
-                </div>
+                    </div>
+                    <div class="hidden md:flex text-sm text-[#000000d9] items-center">
+                        <a href="/" class="mitem px-6 py-6 bg-[#e4e4e4]">HOME</a>
+                        <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
+                        <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
+                        <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
+                        <a href="photos" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">PHOTOS</a>
+                        <a href="things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
+                        <a href="faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
+                        <a href="rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
+                    </div>
+
+                </nav>
             </div>
-            <!--<div class="menu menuEffects">
+        </div>
+        <!--<div class="menu menuEffects">
                 <div class="menuContent">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -71,12 +81,13 @@
                         <li><a href="/rsvp">RSVP</a></li>
                     </ul>
                 </div>-->
-        </div>
-    
-    
-            <!--<script src="https://www.google.com/recaptcha/api.js?render=6Ld0Da0ZAAAAAMFsAo3svvCCwZeEOdeQba29IOpG"></script>-->
+    </div>
 
-            <div class="page-header h-[400px] bg-cover bg-center" style="background-image: url('../assets/images/kg-rsvp.jpg')"></div>
+
+    <!--<script src="https://www.google.com/recaptcha/api.js?render=6Ld0Da0ZAAAAAMFsAo3svvCCwZeEOdeQba29IOpG"></script>-->
+
+    <div class="page-header h-[400px] bg-cover bg-center" style="background-image: url('../assets/images/kg-rsvp.jpg')">
+    </div>
 
     <div class="container mx-auto flex justify-center items-center flex-wrap">
         <div class="py-8 md:py-12 basis-full md:basis-1/2">
@@ -122,7 +133,7 @@
 
                 <!--<div class="guests-block-adult basis-full"></div>-->
 
-                <!--<label class="basis-full px-2 py-2">
+            <!--<label class="basis-full px-2 py-2">
                     <span class="text-bold">Acompañantes menores de edad</span>
                     <select data-companion="under" class="guests block mt-1 w-full bg-stone-900 text-gray-300 rounded border-stone-700 focus:border-none focus:ring-2 focus:ring-gray-500 focus:ring-inset" name="mcompanionun" required>
                         <option selected disabled hidden value="">Seleccionar</option>
@@ -144,71 +155,83 @@
             <form class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-900 text-white p-6 rounded-lg">
                 <!-- Name -->
                 <div>
-                  <label class="block text-sm font-medium mb-1 text-red-500">Name</label>
-                  <input type="text" name="name" class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2" placeholder="Enter your name" required>
-                  <p class="text-red-500 text-sm mt-1">Please enter your name</p>
+                    <label class="block text-sm font-medium mb-1 text-red-500">Name</label>
+                    <input type="text" name="name"
+                        class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2"
+                        placeholder="Enter your name" required>
+                    <p class="text-red-500 text-sm mt-1">Please enter your name</p>
                 </div>
-              
+
                 <!-- Email -->
                 <div>
-                  <label class="block text-sm font-medium mb-1 text-red-500">E-mail</label>
-                  <input type="email" name="email" class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2" placeholder="Enter your email" required>
-                  <p class="text-red-500 text-sm mt-1">Please enter your e-mail</p>
+                    <label class="block text-sm font-medium mb-1 text-red-500">E-mail</label>
+                    <input type="email" name="email"
+                        class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2"
+                        placeholder="Enter your email" required>
+                    <p class="text-red-500 text-sm mt-1">Please enter your e-mail</p>
                 </div>
-              
+
                 <!-- Phone -->
                 <div>
-                  <label class="block text-sm font-medium mb-1 text-red-500">Phone (Country Code + City Code + Phone Number)</label>
-                  <input type="text" name="phone" class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2" placeholder="+52 55 1234 5678" required>
-                  <p class="text-red-500 text-sm mt-1">Please enter your phone number</p>
+                    <label class="block text-sm font-medium mb-1 text-red-500">Phone (Country Code + City Code + Phone
+                        Number)</label>
+                    <input type="text" name="phone"
+                        class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2"
+                        placeholder="+52 55 1234 5678" required>
+                    <p class="text-red-500 text-sm mt-1">Please enter your phone number</p>
                 </div>
-              
+
                 <!-- Dietery Requirements -->
                 <div>
-                  <label class="block text-sm font-medium mb-1">Dietary Requirements</label>
-                  <textarea name="food" rows="4" class="w-full rounded-md border bg-gray-800 text-white p-2"></textarea>
+                    <label class="block text-sm font-medium mb-1">Dietary Requirements</label>
+                    <textarea name="food" rows="4"
+                        class="w-full rounded-md border bg-gray-800 text-white p-2"></textarea>
                 </div>
-              
+
                 <!-- Hotel -->
                 <div>
-                  <label class="block text-sm font-medium mb-1 text-red-500">Hotel</label>
-                  <select name="hotel" class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2" required>
-                    <option value="" disabled selected>Select a hotel</option>
-                    <option value="hotel-1">Hotel 1</option>
-                    <option value="hotel-2">Hotel 2</option>
-                  </select>
-                  <p class="text-red-500 text-sm mt-1">Please select a hotel</p>
+                    <label class="block text-sm font-medium mb-1 text-red-500">Hotel</label>
+                    <select name="hotel" class="w-full rounded-md border border-red-500 bg-gray-800 text-white p-2"
+                        required>
+                        <option value="" disabled selected>Select a hotel</option>
+                        <option value="hotel-1">Hotel 1</option>
+                        <option value="hotel-2">Hotel 2</option>
+                    </select>
+                    <p class="text-red-500 text-sm mt-1">Please select a hotel</p>
                 </div>
-              
+
                 <!-- Guests -->
                 <div>
-                  <label class="block text-sm font-medium mb-1">Guests</label>
-                  <select name="guests" class="w-full rounded-md border bg-gray-800 text-white p-2">
-                    <option value="1">1</option>
-                    <option value="2" selected>2</option>
-                    <option value="3">3</option>
-                  </select>
+                    <label class="block text-sm font-medium mb-1">Guests</label>
+                    <select name="guests" class="w-full rounded-md border bg-gray-800 text-white p-2">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
-              
+
                 <!-- Guest Full Name -->
                 <div class="col-span-2">
-                  <p class="text-sm mb-2">Please enter your guests full name:</p>
-                  <input type="text" name="guest_name[]" class="w-full rounded-md border bg-gray-800 text-white p-2 mb-2" placeholder="Guest full name">
-                  <input type="text" name="guest_name[]" class="w-full rounded-md border bg-gray-800 text-white p-2" placeholder="Guest full name">
+                    <p class="text-sm mb-2">Please enter your guests full name:</p>
+                    <input type="text" name="guest_name[]"
+                        class="w-full rounded-md border bg-gray-800 text-white p-2 mb-2" placeholder="Guest full name">
+                    <input type="text" name="guest_name[]" class="w-full rounded-md border bg-gray-800 text-white p-2"
+                        placeholder="Guest full name">
                 </div>
-              
+
                 <!-- Message -->
                 <div class="col-span-2">
-                  <label class="block text-sm font-medium mb-1">Message</label>
-                  <textarea name="message" rows="4" class="w-full rounded-md border bg-gray-800 text-white p-2"></textarea>
+                    <label class="block text-sm font-medium mb-1">Message</label>
+                    <textarea name="message" rows="4"
+                        class="w-full rounded-md border bg-gray-800 text-white p-2"></textarea>
                 </div>
-              
+
                 <!-- Submit Button -->
                 <div class="col-span-2">
-                  <button type="submit" class="w-full bg-white text-black font-semibold py-3 rounded-md">Send</button>
+                    <button type="submit" class="w-full bg-white text-black font-semibold py-3 rounded-md">Send</button>
                 </div>
-              </form>
-              
+            </form>
+
         </div>
     </div>
 
@@ -221,7 +244,8 @@
             </div>
         </div>
     </footer>
-      
+
     <script src="src/js/main.js" defer></script>
-    </body>
+</body>
+
 </html>
