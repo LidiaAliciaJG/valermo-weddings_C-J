@@ -7,7 +7,7 @@
     <link rel="canonical" href="/faqs">
     <title>Claire & Jonny</title>
     <link rel="stylesheet" href="../src/css/output.css">
-
+    <script src="src/js/router.js"></script>
 </head>
 
 <body class="font-playfair antialiased bg-black text-white">
@@ -77,336 +77,86 @@
     <div class="page-header h-[400px] bg-cover bg-center" style="background-image: url('../assets/images/kg-faq.jpg')">
     </div>
 
-    <!--PRUEBA 1-->
-    <h2 class="text-center font-semibold text-3xl mt-[32px]">FAQS</h2>
-    <section class="container mx-auto px-4 py-10 space-y-10">
-
-        <!-- BLOQUE -->
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-stretch text-center">
-
-                <!-- Pregunta -->
-                <div class="w-full md:w-[42%] flex justify-end items-center px-2">
-                    <h2 class="text-lg font-bold text-center">
-                        When should I start making travel arrangements?
-                    </h2>
-                </div>
-
-                <!-- Línea vertical (pantallas grandes) -->
-                <div class="hidden md:flex w-[2%] justify-center">
-                    <div class="w-[2px] bg-white self-stretch"></div>
-                </div>
-
-                <!-- Respuesta -->
-                <div class="w-full md:w-[56%] flex justify-start items-center px-2">
-                    <p class="text-center">
-                        ASAP! Please start planning now before everything fills
-                        up and prices sky rocket. Mexico is open for travel.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Línea horizontal (pantallas chicas) -->
-            <div class="md:hidden flex justify-center my-6">
-                <img src="../assets/images/visuals/hr.svg" alt="divider" class="w-[90%] max-w-md" />
-            </div>
-        </div>
-
-        <!-- BLOQUE 2 -->
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-stretch text-center">
-
-                <!-- Pregunta -->
-                <div class="w-full md:w-[42%] flex justify-end items-center px-2">
-                    <h2 class="text-lg font-bold text-center">
-                        Do I need visa?
-                    </h2>
-                </div>
-
-                <!-- Línea vertical (pantallas grandes) -->
-                <div class="hidden md:flex w-[2%] justify-center">
-                    <div class="w-[2px] bg-white self-stretch"></div>
-                </div>
-
-                <!-- Respuesta -->
-                <div class="w-full md:w-[56%] flex justify-start items-center px-2">
-                    <p class="text-center">
-                        You do not need a visa if you are a citizen of US, Canada, EU, or UK.
-                        Just bring your current passport.
-                        <br>
-                        When you go through immigration, all non-Mexican citizens receive a
-                        small piece of paper from the customs officer that you will need to
-                        keep with your passport. *You will need this paper to leave the
-                        country*
-                        <br>
-                        NOTE: for all international travel, you need to ensure that your
-                        passport is valid for a minimum of 6 months after your travel. Obtain
-                        or renew your passport here:
-                        <a href="https://www.usa.gov/passport" target="_blank" class="underline text-blue-300">
-                            https://www.usa.gov/passport
-                        </a>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Línea horizontal (pantallas chicas) -->
-            <div class="md:hidden flex justify-center my-6">
-                <img src="../assets/images/visuals/hr.svg" alt="divider" class="w-[90%] max-w-md" />
-            </div>
-        </div>
-    </section>
-
- <!--PRUEBA 2-->
-    <h2 class="text-center font-semibold text-3xl mt-[32px]">FAQS</h2>
-    <section class="container mx-auto px-4 py-10 space-y-10">
-
-        <!-- Bloque 1 -->
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-stretch justify-center text-center">
-
-                <!-- Pregunta -->
-                <div class="w-full md:w-[42%] max-w-sm flex justify-end items-center px-2">
-                    <h2 class="text-lg font-bold">
-                        When should I start making travel arrangements?
-                    </h2>
-                </div>
-
-                <!-- Línea vertical (laptop, tablet) -->
-                <div class="hidden md:flex w-[2%] justify-center">
-                    <div class="w-[2px] bg-white self-stretch"></div>
-                </div>
-
-                <!-- Respuesta -->
-                <div class="w-full md:w-[56%] max-w-md flex justify-start items-center px-2">
-                    <p>
-                        ASAP! Please start planning now before everything fills
-                        up and prices sky rocket. Mexico is open for travel.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Línea horizontal (celular) -->
-            <div class="md:hidden flex justify-center my-6">
-                <img src="../assets/images/visuals/hr.svg" alt="divider" class="w-[90%] max-w-md" />
-            </div>
-        </div>
-
-        <!-- Bloque 2 -->
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-stretch justify-center text-center">
-
-                <!-- Pregunta -->
-                <div class="w-full md:w-[42%] max-w-sm flex justify-end items-center px-2">
-                    <h2 class="text-lg font-bold">
-                        Do I need visa?
-                    </h2>
-                </div>
-                <!-- Línea vertical (laptop, tablet) -->
-                <div class="hidden md:flex w-[2%] justify-center">
-                    <div class="w-[2px] bg-white self-stretch"></div>
-                </div>
-
-                <!-- Respuesta -->
-                <div class="w-full md:w-[56%] max-w-md flex justify-start items-center px-2">
-                    <p>
-                        You do not need a visa if you are a citizen of US, Canada, EU, or UK.
-                        Just bring your current passport.
-                        <br>
-                        When you go through immigration, all non-Mexican citizens receive a
-                        small piece of paper from the customs officer that you will need to
-                        keep with your passport. *You will need this paper to leave the
-                        country*
-                        <br>
-                        NOTE: for all international travel, you need to ensure that your
-                        passport is valid for a minimum of 6 months after your travel. Obtain
-                        or renew your passport here: <a href="https://www.usa.gov/passport"
-                            target="_blank">https://www.usa.gov/passport</a>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Línea horizontal (celular) -->
-            <div class="md:hidden flex justify-center my-6">
-                <img src="../assets/images/visuals/hr.svg" alt="divider" class="w-[90%] max-w-md" />
-            </div>
-        </div>
-    </section>
- <!--PRUEBA 3-->
-    <h2 class="text-center font-semibold text-3xl mt-[32px]">FAQS</h2>
-    <section class="container mx-auto px-4 py-10">
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-stretch text-center">
-
-                <!-- Pregunta -->
-                <div class="w-full md:w-[42%] flex justify-center items-center text-center px-4">
-                    <h2 class="text-lg font-bold">
-                        When should I start making travel arrangements?
-                    </h2>
-                </div>
-
-                <!-- Línea vertical -->
-                <div class="hidden md:flex w-[2%] justify-center">
-                    <div class="w-[2px] bg-white self-stretch"></div>
-                </div>
-
-                <!-- Respuesta -->
-                <div class="w-full md:w-[56%] flex items-center text-center px-4">
-                    <p>
-                        ASAP! Please start planning now before everything fills
-                        up and prices sky rocket. Mexico is open for travel.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
- <!--PRUEBA 4-->
-    <h2 class="text-center font-semibold text-3xl mt-[32px]">FAQS</h2>
-    <section class="container mx-auto px-4 py-10">
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-stretch md:gap-12 text-center">
-
-                <!-- Pregunta -->
-                <div class="text-center w-full md:w-1/2 space-y-4">
-                    <h2 class="text-lg font-bold">
-                        When should I start making travel arrangements?
-                    </h2>
-                </div>
-
-                <!-- Línea vertical (más a la izquierda y con altura dinámica) -->
-                <div class="hidden md:flex justify-center">
-                    <div class="w-[2px] bg-white self-stretch"></div>
-                </div>
-
-                <!-- Respuesta -->
-                <div class="w-full md:w-1/2 space-y-4 text-center">
-                    <p>
-                        ASAP! Please start planning now before everything fills
-                        up and prices sky rocket. Mexico is open for travel.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
- <!--PRUEBA 5-->
-    <h2 class="text-center font-semibold text-3xl mt-[32px]">FAQS</h2>
-    <section class="container mx-auto px-4 py-10">
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-center md:gap-12 text-center">
-
-                <!-- Question 1 -->
-                <div class="text-center w-full md:w-1/2 space-y-4">
-                    <h2 class="text-lg font-bold">When should I start making travel
-                        arrangements?
-                    </h2>
-                </div>
-
-                <!-- Línea blanca vertical -->
-                <div class="hidden md:flex">
-                    <div class="h-40 w-[2px] bg-white"></div>
-                </div>
-
-                <!-- Answer 1 -->
-                <div class="w-full md:w-1/2 space-y-4 text-center">
-                    <p>
-                        ASAP! Please start planning now before everything fills
-                        up and prices sky rocket. Mexico is open for travel.
-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-center md:gap-12 text-center">
-                <!-- Question 2 -->
-                <div class="text-center w-full md:w-1/2 space-y-4">
-                    <h2 class="text-lg font-bold">Do I need a visa?
-                    </h2>
-                </div>
-
-                <!-- Línea blanca vertical -->
-                <div class="hidden md:flex">
-                    <div class="h-40 w-[2px] bg-white"></div>
-                </div>
-
-                <!-- Answer 2 -->
-                <div class="w-full md:w-1/2 space-y-4 text-center">
-                    <p>
-                        You do not need a visa if you are a citizen of US, Canada, EU, or UK.
-                        Just bring your current passport.
-                    </p>
-                    <p>
-                        When you go through immigration, all non-Mexican citizens receive a
-                        small piece of paper from the customs officer that you will need to
-                        keep with your passport. *You will need this paper to leave the
-                        country*
-
-                    </p>
-                    <p>
-                        NOTE: for all international travel, you need to ensure that your
-                        passport is valid for a minimum of 6 months after your travel. Obtain
-                        or renew your passport here: <a
-                            href="https://www.usa.gov/passport">https://www.usa.gov/passport</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
- <!--PRUEBA 6-->
     <h2 class="text-center font-semibold text-3xl mt-[32px]">FAQS</h2>
     <div class="py-12 px-6">
-        <section class="max-w-5xl mx-auto space-y-16">
+        <section class="max-w-5xl mx-auto md:space-y-16 space-y-4">
 
-            <!-- Bloque de pregunta/respuesta -->
-            <div class="flex items-center">
+            <!-- Bloque 1 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
                 <!-- Pregunta -->
-                <div class="w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
                     <p class="max-w-xs">When should I start making travel arrangements?</p>
                 </div>
 
-                <!-- Línea vertical -->
-                <div class="self-stretch w-px bg-white mx-6"></div>
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
 
                 <!-- Respuesta -->
-                <div class="w-1/2 pl-4 text-center">
+                <div class="w-full md:w-1/2 pl-4 text-center">
                     <p>
                         ASAP! Please start planning now before everything fills up and prices sky rocket. Mexico is open
                         for travel.
                     </p>
                 </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
             </div>
 
-            <div class="flex items-center">
-                <div class="w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+            <!-- Bloque 2 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
+                <!-- Pregunta -->
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
                     <p class="max-w-xs">Do I need a visa?</p>
                 </div>
-                <div class="self-stretch w-px bg-white mx-6"></div>
-                <div class="w-1/2 pl-4 text-center space-y-4">
+
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
+
+                <!-- Respuesta -->
+                <div class="w-full md:w-1/2 pl-4 text-center">
                     <p>
                         You do not need a visa if you are a citizen of US, Canada, EU, or UK. Just bring your current
                         passport.
                     </p>
                     <p>
                         When you go through immigration, all non-Mexican citizens receive a small piece of paper from
-                        the customs officer that you will need to keep with your passport. <em>*You will need this paper
-                            to leave the country*</em>
+                        the customs officer that you will need to keep with your passport. *You will need this paper
+                        to leave the country*
                     </p>
                     <p>
                         NOTE: for all international travel, you need to ensure that your passport is valid for a minimum
                         of 6 months after your travel. Obtain or renew your passport here:
-                        <a href="https://www.usa.gov/passport" class="text-blue-600 underline">usa.gov/passport</a>
+                        <a href="https://www.usa.gov/passport"
+                            class="text-blue-400 underline">https://www.usa.gov/passport</a>
                     </p>
                 </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
             </div>
 
-            <div class="flex items-center">
-                <div class="w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+            <!-- Bloque 3 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
+                <!-- Pregunta -->
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
                     <p class="max-w-xs">What is the currency in Mexico?</p>
                 </div>
-                <div class="self-stretch w-px bg-white mx-6"></div>
-                <div class="w-1/2 pl-4 text-center space-y-4">
+
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
+
+                <!-- Respuesta -->
+                <div class="w-full md:w-1/2 pl-4 text-center">
                     <p>
                         The Mexican peso (sign: $, code: MXN) is the currency. You’ll have the opportunity to withdraw
                         cash from ATMs once you land. The exchange rate changes daily. However, the peso usually hovers
@@ -420,6 +170,129 @@
                         with your luggage (10–20 pesos is fine).
                     </p>
                 </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
+            </div>
+
+            <!-- Bloque 4 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
+                <!-- Pregunta -->
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+                    <p class="max-w-xs">What is the weather like in Mexico
+                        City in January-February?</p>
+                </div>
+
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
+
+                <!-- Respuesta -->
+                <div class="w-full md:w-1/2 pl-4 text-center">
+                    <p>
+                        The temperature in January - February averages
+                        between from 72°F to 76°F. January and February are
+                        often considered good months to visit Mexico City due
+                        to the pleasant, mostly sunny weather.
+                    </p>
+                </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
+            </div>
+
+            <!-- Bloque 5 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
+                <!-- Pregunta -->
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+                    <p class="max-w-xs">Can the altitude of Mexico City
+                        have any effect on us?</p>
+                </div>
+
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
+
+                <!-- Respuesta -->
+                <div class="w-full md:w-1/2 pl-4 text-center">
+                    <p>
+                        Mexico city sits at 7,350 feet above sea level. Some folks may
+                        experience headaches and nausea when they first arrive, so it's
+                        important to stay hydrated and eat plenty of carbs (preferably tacos). It
+                        can even increase the effect of alcoholic beverages.
+                    </p>
+                </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
+            </div>
+
+            <!-- Bloque 6 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
+                <!-- Pregunta -->
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+                    <p class="max-w-xs">Is Mexico really dangerous like the
+                        'Fake News' media portrays?</p>
+                </div>
+
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
+
+                <!-- Respuesta -->
+                <div class="w-full md:w-1/2 pl-4 text-center">
+                    <p>
+                        More than 150,000 Americans safely visit Mexico every day. Every city
+                        and country has places that are safe and dangerous. Mexico is no
+                        exception. The areas that are dangerous should be avoided. And those
+                        that are safe should be enjoyed and celebrated.
+
+                    </p>
+                </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
+            </div>
+
+            <!-- Bloque 7 -->
+            <div class="flex flex-col md:flex-row items-center md:py-8">
+                <!-- Pregunta -->
+                <div
+                    class="w-full mb-8 md:mb-0 md:w-1/2 pr-4 text-center italic font-semibold flex items-start justify-center">
+                    <p class="max-w-xs">Who can I contact if I have any questions
+                        regarding the wedding and/or my trip to
+                        Mexico City?</p>
+                </div>
+
+                <!-- Línea vertical (pantallas grandes) -->
+                <div class="hidden md:flex self-stretch w-px bg-white mx-6"></div>
+
+                <!-- Respuesta -->
+                <div class="w-full md:w-1/2 pl-4 text-center">
+                    <p>
+                        Please email atencion@movaeventos.com.mx as your
+                        single point of contact for all things wedding related.
+
+                    </p>
+                </div>
+
+                <!--Línea horizontal (pantallas chicas)-->
+                <div class="md:hidden flex justify-center my-6">
+                    <img class="w-[90%] max-w-md" src="../assets/images/visuals/hr.svg" alt="divider">
+                </div>
+
             </div>
 
         </section>

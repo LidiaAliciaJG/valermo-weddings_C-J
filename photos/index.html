@@ -1,63 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="canonical" href="/photos">
-        <title>Claire & Jonny</title>
-        <link rel="stylesheet" href="../src/css/output.css">
-    
-    </head>
-    <body class="font-playfair antialiased bg-black text-white">
-        <div class="header">
-            <div class="container mx-auto p-9">
-                <div class="container mx-auto">
-                    <div class="hidden sm:flex flex-wrap items-center justify-center text-center">
-                        <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:mr-2">
-                            Saturday, January 31th 2026
-                        </div>
-                        <div class="basis-full sm:basis-1/2">
-                            <h1 class="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
-                                Claire & Jonny
-                            </h1>
-                        </div>
-                        <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:ml-2">
-                            Mexico City
-                        </div>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="/photos">
+    <title>Claire & Jonny</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+    <script src="src/js/router.js"></script>
+    <style>
+        @keyframes fromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fromBottom {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .scene img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="font-playfair antialiased bg-black text-white">
+    <div class="header">
+        <div class="container mx-auto p-9">
+            <div class="container mx-auto">
+                <div class="hidden sm:flex flex-wrap items-center justify-center text-center">
+                    <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:mr-2">
+                        Saturday, January 31th 2026
                     </div>
+                    <div class="basis-full sm:basis-1/2">
+                        <h1 class="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
+                            Claire & Jonny
+                        </h1>
+                    </div>
+                    <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:ml-2">
+                        Mexico City
+                    </div>
+
                 </div>
             </div>
-            <div class="nav-bar bg-white text-black">
-                <div class="container mx-auto">
-                    <nav class="flex justify-center">
-                        <!--<div class="flex">
+        </div>
+        <div class="nav-bar bg-white text-black">
+            <div class="container mx-auto">
+                <nav class="flex justify-center">
+                    <!--<div class="flex">
                       <img class="logo" src="/assets/images/mj_short.png" alt="Mis XV años">
                     </div>-->
-                        <div class="flex lg:hidden">
-                            <div class="flex items-center m-burger">
-                                <button class="flex items-center hamburger hamburger--collapse mobileMenu" type="button">
-                                    <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                    </span>
-                                </button>
-                            </div>
+                    <div class="flex lg:hidden">
+                        <div class="flex items-center m-burger">
+                            <button class="flex items-center hamburger hamburger--collapse mobileMenu" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
                         </div>
-                        <div class="hidden md:flex text-sm text-[#000000d9] items-center">
-                            <a href="/" class="mitem px-6 py-6 hover:bg-[#e4e4e440] ">HOME</a>
-                            <a href="/schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
-                            <a href="/tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
-                            <a href="/registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
-                            <a href="/photos" class="mitem px-6 py-6 bg-[#e4e4e4] ">PHOTOS</a>
-                            <a href="/things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
-                            <a href="/faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
-                            <a href="/rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
-                          </div>
-                          
-                    </nav>
-                </div>
+                    </div>
+                    <div class="hidden md:flex text-sm text-[#000000d9] items-center">
+                        <a href="/" class="mitem px-6 py-6 hover:bg-[#e4e4e440] ">HOME</a>
+                        <a href="/schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
+                        <a href="/tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
+                        <a href="/registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
+                        <a href="/photos" class="mitem px-6 py-6 bg-[#e4e4e4] ">PHOTOS</a>
+                        <a href="/things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
+                        <a href="/faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
+                        <a href="/rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
+                    </div>
+
+                </nav>
             </div>
-            <!--<div class="menu menuEffects">
+        </div>
+        <!--<div class="menu menuEffects">
                 <div class="menuContent">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -70,89 +119,13 @@
                         <li><a href="/rsvp">RSVP</a></li>
                     </ul>
                 </div>-->
-        </div>
-    
-            <section class="section gallery">
-        <div class="carrousell">
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/001.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/002.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/003.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/004.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/005.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/006.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/007.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/008.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/009.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/010.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/011.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/012.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/013.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/014.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/015.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/016.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/017.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/018.jpg')"></div>
-            </div>
-            <div class="carrousell-img">
-                <div class="over-layer"></div>
-                <div class="full is-width-1" style="background-image: url('/assets/images/galleries/mariajose/019.jpg')"></div>
-            </div>
-        </div>
-        <div class="controls"></div>
-    </section>
+    </div>
+
+    <div id="slideshow" class="w-full max-w-screen-xl mx-auto h-[90vh] overflow-hidden relative"></div>
+
+
+
+
     <footer class="py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center text-center space-y-6">
@@ -162,7 +135,111 @@
             </div>
         </div>
     </footer>
-      
-    <script src="src/js/main.js" defer></script>
-    </body>
+
+
+    <script>
+        const imageCount = 19; // total number of images in your folder
+        const imagePaths = Array.from({ length: imageCount }, (_, i) => `../assets/images/galleries/${i + 1}.jpg`);
+
+        function getImage() {
+            imagePaths.forEach(element => {
+                return element
+            });
+        }
+
+        const scenes = [
+            /*() => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-left"><img src="${getImage()}" alt="" class="w-full h-full" /></div>
+              <div class="animate-from-right"><img src="${getImage()}" alt="" class="w-full h-full" /></div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="col-span-1 grid grid-cols-2 grid-rows-2 gap-2">
+                <div class="animate-from-left col-span-2 row-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              </div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="col-span-1 grid grid-rows-2 gap-2">
+                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="grid grid-rows-2 gap-2">
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                        </div>
+                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                    </div>
+                </div>
+            </div>
+          `,
+          () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+                <div class="col-span-1 grid grid-rows-2 gap-2">
+                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="grid grid-rows-2 gap-2">
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                        </div>
+                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                    </div>
+                </div>
+                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+            </div>
+          `,*/
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="grid grid-rows-2 gap-2">
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              </div>
+            </div>
+          `,/*
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 gap-2">
+              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="grid grid-rows-3 gap-2">
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              </div>
+            </div>
+          `,
+            () => `
+            <div class="scene w-full h-full grid grid-cols-2 grid-rows-2 gap-2">
+              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="animate-from-top"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+              <div class="animate-from-bottom"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
+            </div>
+          `*/
+        ];
+
+        let current = 0;
+        const container = document.getElementById('slideshow');
+
+        function showScene() {
+            container.innerHTML = scenes[current % scenes.length]();
+            current++;
+        }
+
+        showScene();
+        setInterval(showScene, 5000);
+    </script>
+</body>
+
 </html>
