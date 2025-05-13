@@ -2,122 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        const base = document.createElement('base');
-        if (location.hostname.includes('github.io')) {
-            base.href = '/valermo-weddings_C-J/';
-        } else {
-            base.href = '/';
-        }
-        document.head.appendChild(base);
-    </script>
-    <link rel="canonical" href="/photos">
-    <title>Claire & Jonny</title>
-    <link rel="stylesheet" href="src/css/output.css">
-    <style>
-        @keyframes fromLeft {
-            0% {
-                transform: translateX(-100%);
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const base = document.createElement('base');
+    if (location.hostname.includes('github.io')) {
+      base.href = '/valermo-weddings_C-J/';
+    } else {
+      base.href = '/';
+    }
+    document.head.appendChild(base);
+  </script>
+  <link rel="canonical" href="/photos">
+  <title>Claire & Jonny</title>
+  <link rel="stylesheet" href="src/css/output.css">
+  <style>
+    .scene {
+      height: 100%;
+    }
 
-            100% {
-                transform: translateX(0);
-            }
-        }
+    .scene img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
 
-        @keyframes fromRight {
-            0% {
-                transform: translateX(100%);
-            }
+    @keyframes fromLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 1;
+      }
 
-            100% {
-                transform: translateX(0);
-            }
-        }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
 
-        @keyframes fromTop {
-            0% {
-                transform: translateY(-100%);
-            }
+    @keyframes fromRight {
+      from {
+        transform: translateX(-100%);
+        opacity: 1;
+      }
 
-            100% {
-                transform: translateY(0);
-            }
-        }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
 
-        @keyframes fromBottom {
-            0% {
-                transform: translateY(100%);
-            }
+    @keyframes fromTop {
+      from {
+        transform: translateY(-100%);
+        opacity: 1;
+      }
 
-            100% {
-                transform: translateY(0);
-            }
-        }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
 
-        .scene {
-            height: 100%;
-        }
+    @keyframes fromBottom {
+      from {
+        transform: translateY(-100%);
+        opacity: 1;
+      }
 
-        .scene img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .animate-from-left {
+      animation: fromLeft 0.8s ease-out both;
+    }
+
+    .animate-from-right {
+      animation: fromRight 0.8s ease-out both;
+    }
+
+    .animate-from-top {
+      animation: fromTop 0.8s ease-out both;
+    }
+
+    .animate-from-bottom {
+      animation: fromBottom 0.8s ease-out both;
+    }
+  </style>
 </head>
 
 <body class="font-playfair antialiased bg-black text-white">
-    <div class="header">
-        <div class="container mx-auto p-9">
-            <div class="container mx-auto">
-                <div class="hidden sm:flex flex-wrap items-center justify-center text-center">
-                    <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:mr-2">
-                        Saturday, January 31th 2026
-                    </div>
-                    <div class="basis-full sm:basis-1/2">
-                        <h1 class="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
-                            Claire & Jonny
-                        </h1>
-                    </div>
-                    <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:ml-2">
-                        Mexico City
-                    </div>
+  <div class="header">
+    <div class="container mx-auto p-9">
+      <div class="container mx-auto">
+        <div class="hidden sm:flex flex-wrap items-center justify-center text-center">
+          <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:mr-2">
+            Saturday, January 31th 2026
+          </div>
+          <div class="basis-full sm:basis-1/2">
+            <h1 class="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
+              Claire & Jonny
+            </h1>
+          </div>
+          <div class="basis-full sm:basis-1/5 text-sm sm:text-base sm:ml-2">
+            Mexico City
+          </div>
 
-                </div>
-            </div>
         </div>
-        <div class="nav-bar bg-white text-black">
-            <div class="container mx-auto">
-                <nav class="flex justify-center">
-                    <!--<div class="flex">
+      </div>
+    </div>
+    <div class="nav-bar bg-white text-black">
+      <div class="container mx-auto">
+        <nav class="flex justify-center">
+          <!--<div class="flex">
                       <img class="logo" src="/assets/images/mj_short.png" alt="Mis XV años">
                     </div>-->
-                    <div class="flex lg:hidden">
-                        <div class="flex items-center m-burger">
-                            <button class="flex items-center hamburger hamburger--collapse mobileMenu" type="button">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="hidden md:flex text-sm text-[#000000d9] items-center">
-                        <a href="" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">HOME</a>
-                        <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
-                        <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
-                        <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
-                        <a href="photos" class="mitem px-6 py-6 bg-[#e4e4e4]">PHOTOS</a>
-                        <a href="things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
-                        <a href="faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
-                        <a href="rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
-                    </div>
-                </nav>
+          <div class="flex lg:hidden">
+            <div class="flex items-center m-burger">
+              <button class="flex items-center hamburger hamburger--collapse mobileMenu" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             </div>
-        </div>
-        <!--<div class="menu menuEffects">
+          </div>
+          <div class="hidden md:flex text-sm text-[#000000d9] items-center">
+            <a href="" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">HOME</a>
+            <a href="schedule" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">SCHEDULE</a>
+            <a href="tips" class="mitem px-6 py-6  hover:bg-[#e4e4e440]">TRAVEL + HOTEL</a>
+            <a href="registry" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">REGISTRY</a>
+            <a href="photos" class="mitem px-6 py-6 bg-[#e4e4e4]">PHOTOS</a>
+            <a href="things-to-do" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">THINGS TO DO</a>
+            <a href="faqs" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">FAQS</a>
+            <a href="rsvp" class="mitem px-6 py-6 hover:bg-[#e4e4e440]">RSVP</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--<div class="menu menuEffects">
                 <div class="menuContent">
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -130,164 +154,278 @@
                         <li><a href="/rsvp">RSVP</a></li>
                     </ul>
                 </div>-->
+  </div>
+
+  <div id="slideshow" class="w-full h-screen overflow-hidden"></div>
+
+
+  <footer class="py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col items-center text-center space-y-6">
+        <h5 class="text-sm font-semibold">Web Invitations</h5>
+        <img class="logo-footer max-w-[5rem]" src="assets/images/mova_eventos.svg" alt="MOVA Eventos">
+        <p class="text-sm">© 2025 un desarrollo para MOVÀ Eventos</p>
+      </div>
     </div>
-
-    <div id="slideshow" class="w-full h-[90vh] overflow-hidden relative"></div>
-
-
-    <footer class="py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col items-center text-center space-y-6">
-                <h5 class="text-sm font-semibold">Web Invitations</h5>
-                <img class="logo-footer max-w-[5rem]" src="assets/images/mova_eventos.svg" alt="MOVA Eventos">
-                <p class="text-sm">© 2025 un desarrollo para MOVÀ Eventos</p>
-            </div>
-        </div>
-    </footer>
+  </footer>
 
 
-    <script>
-        const imageCount = 19; // total number of images in your folder
-        /*const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/galleries/${i + 1}.jpg`);*/
-        const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/example-couple${i + 1}.jpg`);
+  <script>
+    const imageCount = 10; // total number of images in your folder
+    /*const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/galleries/${i + 1}.jpg`);*/
+    const imagePaths = Array.from({ length: imageCount }, (_, i) => `assets/images/example-couple${i + 1}.jpg`);
 
-        let currentImageIndex = 0;
-        function getImage() {
-            const image = imagePaths[currentImageIndex];
-            currentImageIndex = (currentImageIndex + 1) % imagePaths.length; // reinicia al llegar al final
-            return image;
-        }
+    let currentImageIndex = 0;
+    function getImage() {
+      const image = imagePaths[currentImageIndex];
+      currentImageIndex = (currentImageIndex + 1) % imagePaths.length; // reinicia al llegar al final
+      return image;
+    }
 
-        const scenes = [
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-left"><img src="${getImage()}" alt="" class="w-full h-full object-cover " /></div>
-              <div class="animate-from-right"><img src="${getImage()}" alt="" class="w-full h-full object-cover " /></div>
+    const animationClasses = [
+      "animate-from-left",
+      "animate-from-right",
+      "animate-from-top",
+      "animate-from-bottom"
+    ];
+
+    function getRandomAnimation() {
+      const index = Math.floor(Math.random() * animationClasses.length);
+      return animationClasses[index];
+    }
+
+
+
+    const scenes = [
+      () => `
+            <div class="scene w-full max-h-[800px] grid grid-cols-2 gap-2">
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" alt="" class="w-full h-full object-cover " /></div>
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" alt="" class="w-full h-full object-cover " /></div>
             </div>
           `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="col-span-1 grid grid-cols-2 grid-rows-2 gap-2">
-                <div class="animate-from-left col-span-2 row-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+      () => `
+            <div class="scene w-full h-[800px] mx-auto grid grid-cols-4 grid-rows-2 gap-2">
+              <!-- A: mitad izquierda (2 de 4 columnas), ocupa las 2 filas -->
+              <div class="col-span-2 row-span-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- B: parte superior derecha (2 columnas de la derecha, fila 1) -->
+              <div class="col-start-3 col-span-2 row-start-1 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- C: abajo derecha izquierda (columna 3) -->
+              <div class="col-start-3 row-start-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- D: abajo derecha derecha (columna 4) -->
+              <div class="col-start-4 row-start-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            `,
+      () => `
+            <div class="scene w-full h-[800px] mx-auto grid grid-cols-4 grid-rows-2 gap-2">
+            <!-- B: parte superior izquierda, abarca ambas columnas -->
+            <div class="col-span-2 row-start-1 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- C: parte inferior izquierda, columna 1 -->
+            <div class="col-start-1 row-start-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- D: parte inferior izquierda, columna 2 -->
+            <div class="col-start-2 row-start-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- A: imagen grande a la derecha (ocupa mitad del ancho y ambas filas) -->
+            <div class="col-start-3 col-span-2 row-span-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+          </div>
+            `,
+      () => `<div class="grid grid-cols-4 grid-rows-3 gap-2 h-[800px] w-full mx-auto">
+              <!-- A: imagen izquierda grande -->
+              <div class="col-span-2 row-span-3 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- B: imagen arriba derecha -->
+              <div class="col-span-2 row-span-1 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- C: abajo de B, izquierda -->
+              <div class="col-start-3 row-start-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- E: abajo de C -->
+              <div class="col-start-3 row-start-3 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- D: ocupa toda la altura de C + E -->
+              <div class="col-start-4 row-start-2 row-span-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            `,
+      () => `
+            <div class="scene w-full h-[800px] mx-auto grid grid-cols-4 grid-rows-3 gap-2">
+            <!-- A: imagen derecha grande (ocupa 2 columnas y 3 filas) -->
+            <div class="col-start-3 col-span-2 row-span-3 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- B: parte superior izquierda -->
+            <div class="col-span-2 row-start-1 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- C: debajo de B, izquierda -->
+            <div class="col-start-1 row-start-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- E: debajo de C -->
+            <div class="col-start-1 row-start-3 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- D: a la derecha de C y E, ocupa ambas filas (2 y 3) -->
+            <div class="col-start-2 row-start-2 row-span-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+          </div>
+      `,
+      () => `
+            <div class="scene w-full max-h-[800px] grid grid-cols-2 gap-2">
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+            </div>
+          `,
+      () => `
+          <div class="scene w-full h-[800px] mx-auto grid grid-cols-2 grid-rows-2 gap-2">
+            <!-- A: columna izquierda, ocupa las dos filas -->
+            <div class="col-span-1 row-span-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- B: parte superior derecha -->
+            <div class="col-start-2 row-start-1 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- C: debajo de B -->
+            <div class="col-start-2 row-start-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+          </div>
+      `,
+      () => `
+          <div class="scene w-full h-[800px] mx-auto grid grid-cols-2 grid-rows-2 gap-2">
+            <!-- B: parte superior izquierda -->
+            <div class="col-start-1 row-start-1 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- C: debajo de B -->
+            <div class="col-start-1 row-start-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- A: columna derecha, ocupa las dos filas -->
+            <div class="col-start-2 col-span-2 row-span-2 ${getRandomAnimation()}">
+              <img src="${getImage()}" class="w-full h-full object-cover" />
+            </div>
+          </div>
+      `,
+      () => `
+            <div class="scene w-full h-[800px] mx-auto grid grid-cols-3 grid-rows-3 gap-2">
+              <!-- A: ocupa las dos primeras columnas y las 3 filas -->
+              <div class="col-span-2 row-span-3 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- B: fila 1, columna 3 -->
+              <div class="col-start-3 row-start-1 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- C: fila 2, columna 3 -->
+              <div class="col-start-3 row-start-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- D: fila 3, columna 3 -->
+              <div class="col-start-3 row-start-3 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+            </div>
+      `,
+      () => `
+            <div class="scene w-full h-[800px] mx-auto grid grid-cols-3 grid-rows-2 gap-2">
+              <!-- A: columna izquierda, ocupa las dos filas -->
+              <div class="col-span-2 row-span-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- B: parte superior derecha -->
+              <div class="col-start-3 row-start-1 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- C: debajo de B -->
+              <div class="col-start-3 row-start-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+            </div>
+      `,
+      () => `
+            <div class="scene w-full h-[800px] mx-auto grid grid-cols-3 grid-rows-2 gap-2">
+              <!-- B: parte superior izquierda -->
+              <div class="col-start-1 row-start-1 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- C: debajo de B -->
+              <div class="col-start-1 row-start-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- A: columna derecha, ocupa las dos filas -->
+              <div class="col-start-2 col-span-2 row-span-2 ${getRandomAnimation()}">
+                <img src="${getImage()}" class="w-full h-full object-cover" />
               </div>
             </div>
           `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="col-span-1 grid grid-cols-2 grid-rows-2 gap-2">
-                <div class="animate-from-left col-span-2 row-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover" /></div>
-              </div>
-              <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="col-span-1 grid grid-rows-2 gap-2">
-                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="grid grid-rows-2 gap-2">
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                        </div>
-                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                    </div>
-                </div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-                <div class="col-span-1 grid grid-rows-2 gap-2">
-                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="grid grid-rows-2 gap-2">
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                            <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                        </div>
-                        <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                    </div>
-                </div>
-                <div class="animate-from-left col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="grid grid-rows-2 gap-2">
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              </div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 gap-2">
-              <div class="grid grid-rows-2 gap-2">
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              </div>
-              <div class="animate-from-top col-span-1"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-3 gap-2">
-              <div class="animate-from-top col-span-2"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="grid grid-rows-3 gap-2">
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              </div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-3 gap-2">
-              <div class="animate-from-top col-span-2"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="grid grid-rows-2 gap-2">
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              </div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-3 gap-2">
-                <div class="grid grid-rows-2 gap-2">
-                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                    <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-                </div>
-              <div class="animate-from-top col-span-2"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-            </div>
-          `,
-            () => `
-            <div class="scene w-full h-full grid grid-cols-2 grid-rows-2 gap-2">
-              <div class="animate-from-left"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="animate-from-right"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="animate-from-top"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
-              <div class="animate-from-bottom"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+      () => `
+            <div class="scene w-full max-h-[800px] grid grid-cols-2 grid-rows-2 gap-2">
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
+              <div class="${getRandomAnimation()}"><img src="${getImage()}" class="w-full h-full object-cover " /></div>
             </div>
           `
-        ];
+    ];
 
-        let current = 0;
-        const container = document.getElementById('slideshow');
+    let current = 0;
+    const container = document.getElementById('slideshow');
 
-        function showScene() {
-            container.innerHTML = scenes[current % scenes.length]();
-            current++;
-        }
+    function showScene() {
+      container.innerHTML = scenes[current % scenes.length]();
+      current++;
+    }
 
-        showScene();
-        setInterval(showScene, 5000);
-    </script>
+    showScene();
+    setInterval(showScene, 4000);
+  </script>
 </body>
 
 </html>
